@@ -46,7 +46,7 @@ def get_client():
         st.error("Missing Streamlit secret: Translation")
         st.stop()
 
-    api_key = st.secrets["Translation"]
+    api_key = st.secrets["Image Translate"]
 
     if not api_key or not str(api_key).strip():
         st.error("The secret 'Translation' is empty.")
